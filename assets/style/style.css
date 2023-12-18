@@ -1,0 +1,169 @@
+/* mobile first */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+:root{
+    --primary-color: #d1d1d1;
+    --secondary-color :#4caf50;
+    --white: #ccc;
+    --black:black;
+}
+
+.layout {
+    margin: auto;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+}
+
+main{
+    font-size: 17px;
+}
+
+header{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/assets/img/redes-neuronales.png);
+    height: 80px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: 0% 0%;
+}
+.title {
+    color: white;
+    display: flex;
+    justify-content: center; 
+}
+
+.navbar{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-end;   
+    flex-grow: 1;
+    padding: 10px 10px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.center-nav{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+main{
+    padding: 0px 10px;
+    color: var(--black);
+}
+
+.subtitle{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.text{
+    text-align: justify;
+}
+.cont-article1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--white);
+    border-radius: 30px;
+    width: 300px;
+    box-shadow: 9px 10px 31px -1px rgba(181,176,176,0.93);
+    -webkit-box-shadow: 9px 10px 31px -1px rgba(181,176,176,0.93);
+    -moz-box-shadow: 9px 10px 31px -1px rgba(181,176,176,0.93);
+}
+.card img{
+    height: 180px;
+    width: 100%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.card p{
+    font-weight: bold;
+    padding: 10px 10px 40px 10px;
+    font-size: 18px;
+}
+.cont-button-art{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 10px 20px 10px;
+}
+.btn-art{
+    padding: 5px;
+}
+
+.cont-article2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-article3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+table tr,th,td{
+    border: 1px solid black;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: var(--secondary-color);
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    font-size: 15px;
+    gap: 10px;
+    color: white;
+}
+.cont-form{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+form fieldset{
+    padding: 5px;
+}
+
+@media screen and (min-width:1024px) {
+    .cont-article1{
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+@media screen and (min-width:1024px) {
+    main{
+        font-size: 20px;
+    }
+    .navbar a{
+        font-size: 22px;
+    }
+}
