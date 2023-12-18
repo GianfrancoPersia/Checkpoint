@@ -153,13 +153,20 @@ form fieldset{
     padding: 5px;
 }
 
+footer a{
+    color: white;
+}
+
 @media screen and (min-width:1024px) {
     .cont-article1{
         flex-direction: row;
         justify-content: center;
     }
+    footer{
+        font-size: 18px;
+    }
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1200px) {
     main{
         font-size: 20px;
     }
